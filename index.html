@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg widh="200" heidht="200" viewBox="0 0 200 200">
+        <rect x="0" y="80" fill="#06950a" width="130" height="50"/>
+        <ellipse rx="20" cx="65" cy="78" ry="50" fill="#777"/>
+        <ellipse rx="20" cx="60" cy="80" ry="50" stroke="#777" fill="#fff"/>
+        <rect x="0" y="110" fill="#06950a" width="130" height="30"/>
+        <ellipse rx="40" cx="63" cy="38" ry="20" fill="#555"/>
+        <ellipse rx="40" cx="60" cy="40" ry="20" fill="red"/>
+        <defs>
+            <pattern id="points" x="0" y="0" width="17" height="12"
+            patternUnits="userSpaceOnUse">
+            <circle cx="8" cy="2" r="2" fill="#fff"/>
+        </pattern>
+        </defs>
+        <polygon points="20,15 100,15 100,60 20,60" fill="url(#points)" clip-path="url(#hut)"/>
+        <clipPath id="hut">
+            <ellipse rx="40" cx="60" cy="40" ry="20"/>
+        </clipPath>
+    </svg>
+</body>
+</html>
